@@ -6,7 +6,7 @@ import axios, {
 } from 'axios';
 import { useAuthStore } from '@/lib/stores/auth.store';
 
-const BASE_URL = process.env['NEXT_PUBLIC_API_URL'] ?? 'http://localhost:5000';
+const BASE_URL = process.env['NEXT_PUBLIC_API_URL'] ?? 'https://rentos-xa8c.onrender.com';
 
 export const apiClient: AxiosInstance = axios.create({
   baseURL: `${BASE_URL}/api/v1`,
